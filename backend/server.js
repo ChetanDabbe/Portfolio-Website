@@ -7,11 +7,7 @@ require("dotenv").config();
 const app = express();
 const port = process.env.PORT;
 
-app.use(cors({
-  origin: "https://chetan-dabbe-backend.onrender.com",
-  methods: ["GET", "POST"],
-  allowedHeaders: ["Content-Type"],
-}));
+app.use(cors());
 app.use(express.json());
 mongoose
   .connect(process.env.MONGODB_URI, {
