@@ -1,0 +1,117 @@
+.mainCont{
+    background: linear-gradient(90deg, rgba(10, 10, 20, 0.9), rgba(30, 30, 50, 0.8));
+    margin-top:-3.2vh;
+}
+.images {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+    transition: transform 0.3s ease; 
+  }
+  
+  .images:hover {
+    transform: translateY(-7px); 
+  }
+  
+.left_cont{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+input[type="email"],
+input[type="text"],
+textarea {
+  width: 40vw;
+  height: 4vh;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.607);
+  color: #fff;
+  margin-bottom:0.7rem;
+}
+
+textarea {
+  height: auto;
+  min-height: 8vh;
+  resize: vertical;
+}
+
+.mainCont input[type="email"],
+.mainCont input[type="text"],
+.mainCont textarea {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+label{
+    font-size:1.2rem;
+}
+button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-bottom: 3vh;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+  }
+  
+  button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+ 
+
+  .footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.549);
+  }
+  .footer-links{
+    display: flex;
+    gap:2vw;
+  }
+  .footer-links img{
+    border-radius: 50%;
+  }
+
+  .logo-name{
+    color:#00FFFF;
+    font-size:1.5rem;
+    margin-top:2vh;
+    margin-bottom:2vh;
+  }
+  .notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 9999;
+    animation: fadeOut 3s forwards; /* Animation to fade out the notification */
+  }
+  
+  @keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  

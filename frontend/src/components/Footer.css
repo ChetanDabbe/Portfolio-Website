@@ -1,0 +1,32 @@
+footer {
+    background: linear-gradient(90deg, rgba(10, 10, 20, 0.9), rgba(30, 30, 50, 0.8));
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.icons a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icons a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+.icon {
+    font-size: 2rem; /* Adjust icon size if needed */
+}

@@ -1,0 +1,56 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 5vh 2vw;
+    text-align: justify;
+    background: linear-gradient(90deg, rgba(10, 10, 20, 0.9), rgba(30, 30, 50, 0.8));
+}
+
+.about h1 {
+    color: #ffcc00;
+    font-size: 2.5rem;
+    margin-bottom: 1vh;
+}
+
+.about p {
+    color: white;
+    width: 85%;
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+.about-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    
+}
+
+.about-buttons button {
+    padding: 0.6rem 1.3rem;
+    background: transparent;
+    color: white;
+    border: 2px solid rgb(200, 200, 17);
+    border-radius:10px;
+    cursor: pointer;
+    font-size:0.9rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.about-buttons button:hover {
+    background-color: #20375693;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 5vh 5vw;
+    }
+    
+    .about p {
+        width: 100%;
+    }
+}

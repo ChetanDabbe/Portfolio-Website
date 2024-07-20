@@ -1,0 +1,125 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    flex: 1;
+    justify-content: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffcc00;
+}
+
+.navbar a.active {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+.resume-button {
+    padding: 0.6rem 1.5rem;
+    background: transparent;
+    color: white;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 5rem;
+    transform: translateY(7px); 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: #e6b80093;
+    color: white;
+}
+.menu-btn{
+    display:none;
+}
+.nav-mobile{
+    display:none;
+}
+@media(max-width:768px)
+{
+    .navbar{
+        display:none;
+    }
+    .menu-btn{
+        display:block;
+        background: linear-gradient(90deg, rgba(10, 10, 20, 0.9), rgba(30, 30, 50, 0.8));
+        padding-bottom:-5vh;
+    }
+    .center-icon {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        width: 5vw; 
+        height: 5vh;; 
+        border: 2px solid white; 
+        border-radius: 20%;
+        cursor:pointer;
+        /* fill: #ff0000; */
+      }
+      .center-icon:hover{
+        background-color: rgba(128, 128, 128, 0.504);
+      }
+      .nav-mobile{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        background: linear-gradient(90deg, rgba(10, 10, 20, 0.9), rgba(30, 30, 50, 0.8));
+        gap:1.4vh;
+        border:2px solid black;
+        padding-top:9vh;
+        /* width:50vw; */
+
+        /* margin-top: ; */
+      }
+      .nav-mobile a{
+        color:white;
+        text-decoration: none;
+      }
+
+      .nav-mobile a:hover{
+        color:yellow;
+      }
+      .resume-button2 {
+        width: 100%;
+        max-width: 120px;
+        height: 4vh;
+        text-align: center;
+        padding: 0.7vh;
+        background-color: #ffc107;
+        color: #333;
+        border: none;
+        cursor: pointer;
+        margin-top: 1rem;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      
+      .resume-button2:hover {
+        background-color: #333;
+        color: #ffc107;
+      }
+      
+}
