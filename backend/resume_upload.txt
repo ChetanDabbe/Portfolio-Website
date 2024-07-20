@@ -1,0 +1,46 @@
+const express = require('express');
+const mongoose = require('mongoose');
+const fs = require('fs');
+const path = require('path');
+require('dotenv').config();
+
+const app = express();
+const port = process.env.PORT || 3000;
+
+mongoose.connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}).then(async () => {
+    console.log('Database connected');
+
+    // Read Chetan_resume.pdf file content
+    const filePath = path.join(__dirname, 'Chetan_resume.pdf');
+    const fileContent = fs.readFileSync(filePath);
+
+    // Define schema and model for files
+    const fileSchema = new mongoose.Schema({
+        filename: String,
+        contentType: String,
+        fileData: Buffer
+    });
+    const File = mongoose.model('File', fileSchema);
+
+    // Create new file document
+    const newFile = new File({
+        filename: 'Chetan_resume.pdf',
+        contentType: 'application/pdf',
+        fileData: fileContent
+    });
+
+    // Save file to MongoDB
+    await newFile.save();
+    console.log('Chetan_resume.pdf uploaded to MongoDB');
+    
+}).catch((error) => {
+    console.error('Error connecting to MongoDB:', error);
+});
+
+// Start server
+app.listen(port, () => {
+    console.log(`Server is running on http://localhost:${port}`);
+});
