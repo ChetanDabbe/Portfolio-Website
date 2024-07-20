@@ -19,8 +19,8 @@ const projects = [
     description:
       "A personal portfolio showcasing my projects, skills and creative journey. Built with HTML, CSS, Javascript, React and Node.js",
     image: image_p,
-    websiteLink: "https://example.com",
-    githubLink: "https://github.com/example",
+    websiteLink: "https://chetan-portfolio-website.vercel.app/",
+    githubLink: "https://github.com/ChetanDabbe/Portfolio-Website/tree/master",
   },
   {
     title: "Golden Days Universal School",
@@ -37,14 +37,14 @@ const projects = [
       "Predicting real estate prices using Python with Pandas, Scikit-learn, and NumPy.",
 
     image: real,
-    websiteLink: "https://example.com",
+    websiteLink: "https://github.com/ChetanDabbe/Real-Estate-Price-Prediction",
     githubLink: "https://github.com/ChetanDabbe/Real-Estate-Price-Prediction",
   },
   {
     title:"Bank Statement Analyzer",
     description:"Analyzing bank statements to extract insights and categorize transactions using HTML, CSS, MySQL, Django",
     image:bank_i,
-    websiteLink: "https://example.com",
+    websiteLink: "https://github.com/ChetanDabbe/Bank-Statement-Analyzer",
     githubLink: "https://github.com/ChetanDabbe/Bank-Statement-Analyzer",
   },
 ];
