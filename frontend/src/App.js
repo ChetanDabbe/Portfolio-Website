@@ -37,14 +37,14 @@ const projects = [
       "Predicting real estate prices using Python with Pandas, Scikit-learn, and NumPy.",
 
     image: real,
-    websiteLink: "https://github.com/ChetanDabbe/Real-Estate-Price-Prediction",
+    websiteLink: "https://drive.google.com/drive/folders/1_WkI-2R27-HzJZ0QsFbBre59ul2kMFMA?usp=drive_link",
     githubLink: "https://github.com/ChetanDabbe/Real-Estate-Price-Prediction",
   },
   {
     title:"Bank Statement Analyzer",
     description:"Analyzing bank statements to extract insights and categorize transactions using HTML, CSS, MySQL, Django",
     image:bank_i,
-    websiteLink: "https://github.com/ChetanDabbe/Bank-Statement-Analyzer",
+    websiteLink: "https://drive.google.com/drive/folders/1jLfDt4f0lQcxCfCjES0CWQ4BRtxlMg9w?usp=drive_link",
     githubLink: "https://github.com/ChetanDabbe/Bank-Statement-Analyzer",
   },
 ];
