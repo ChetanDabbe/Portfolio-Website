@@ -26,7 +26,7 @@ const projects = [
   {
     "title": "Leveraging Earth Observation Data for Informed Agricultural Decision-Making",
     "description": "An innovative solution developed for the NASA International Space Apps Challenge. The project empowers farmers by providing a user-friendly chatbot that delivers real-time insights into agricultural challenges, especially water-related issues. The platform integrates NASA's Earth observation data to support informed decision-making, offering actionable insights for stakeholders.",
-    "image": "nasa_img", 
+    "image": nasa_img, 
     "websiteLink": "https://nasa-project-zeta.vercel.app/",
     "githubLink": "https://github.com/ChetanDabbe/NASA-Project",
  },
