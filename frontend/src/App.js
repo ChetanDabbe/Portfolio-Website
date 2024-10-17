@@ -29,7 +29,7 @@ const projects = [
     "image": "nasa_img", 
     "websiteLink": "https://nasa-project-zeta.vercel.app/",
     "githubLink": "https://github.com/ChetanDabbe/NASA-Project",
- }
+ },
 
   {
     title: "Personal Portfolio",
@@ -48,15 +48,6 @@ const projects = [
     githubLink:
       "https://github.com/ChetanDabbe/Golden-Days-Universal-School/tree/master",
   },
-  // {
-  //   title: "Real Estate Price Prediction",
-  //   description:
-  //     "Predicting real estate prices using Python with Pandas, Scikit-learn, and NumPy.",
-
-  //   image: real,
-  //   websiteLink: "https://example.com",
-  //   githubLink: "https://github.com/ChetanDabbe/Real-Estate-Price-Prediction",
-  // },
   {
     title:"Bank Statement Analyzer",
     description:"Analyzing bank statements to extract insights and categorize transactions using HTML, CSS, MySQL, Django",
