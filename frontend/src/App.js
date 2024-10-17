@@ -11,10 +11,26 @@ import image from "./images/golden.png";
 import image_p from "./images/Portfolio.png";
 import bank_i from "./images/bank.png";
 import dsa_v from "./images/dsa-visualizer.png";
+import nasa_img from "./images/nasa-chatbot.png";
 // import real from "./images/real_estate.jpg";
 import Contact from "./components/Contacts.jsx";
 
 const projects = [
+  {
+    title:"Data Structures Visualizer",
+    description:"For understanding and learning the actual execution of Data structures such as Array, Linked List, Stack, Queue.",
+    image:dsa_v,
+    websiteLink: "https://datastruct-visualizer.netlify.app/",
+    githubLink: "https://github.com/ChetanDabbe/Data-Structure-Visualizer",
+  },
+  {
+    "title": "Leveraging Earth Observation Data for Informed Agricultural Decision-Making",
+    "description": "An innovative solution developed for the NASA International Space Apps Challenge. The project empowers farmers by providing a user-friendly chatbot that delivers real-time insights into agricultural challenges, especially water-related issues. The platform integrates NASA's Earth observation data to support informed decision-making, offering actionable insights for stakeholders.",
+    "image": "nasa_img", 
+    "websiteLink": "https://nasa-project-zeta.vercel.app/",
+    "githubLink": "https://github.com/ChetanDabbe/NASA-Project",
+ }
+
   {
     title: "Personal Portfolio",
     description:
@@ -48,13 +64,7 @@ const projects = [
     websiteLink: "https://example.com",
     githubLink: "https://github.com/ChetanDabbe/Bank-Statement-Analyzer",
   },
-  {
-    title:"Data Structures Visualizer",
-    description:"For understanding and learning the actual execution of Data structures such as Array, Linked List, Stack, Queue.",
-    image:dsa_v,
-    websiteLink: "https://datastruct-visualizer.netlify.app/",
-    githubLink: "https://github.com/ChetanDabbe/Data-Structure-Visualizer",
-  },
+  
 ];
 
 function App() {
